@@ -14,6 +14,6 @@ public class ContosoPizzaContext : DbContext // A classe ContosoPizzaContext her
     // Método usado para configurar a conexão com o banco de dados
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer(@"Connection String Here");
+        optionsBuilder.UseSqlServer(@"Server=localhost,5432;Database=balta;User ID=postgres;Password=123");
     }
 }
